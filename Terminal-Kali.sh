@@ -42,8 +42,8 @@ fi
 echo "Cambiando la shell por defecto a zsh para el usuario actual..."
 
 # Comprobar si ya está configurada como zsh
-if [ "$SHELL" != "$(command -v zsh)" ]; then
-    chsh -s $(command -v zsh)
+if [ "$SHELL" != "$(which -v zsh)" ]; then
+    chsh -s $(which -v zsh)
     echo "Shell cambiada exitosamente a zsh. Reinicia tu terminal o cierra sesión para aplicar los cambios."
 else
     echo "zsh ya es la shell por defecto."
