@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Este script sirve para tener terminal con la apariencia de Kali Linux 
+# y de paso te instala pywal para personalizar los colores.
+
 # Detectar la distribución de Linux
 if [ -f /etc/os-release ]; then
     . /etc/os-release
